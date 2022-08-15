@@ -39,6 +39,7 @@ export const resolvers = {
       );
       // Return Authenticated User
       return {
+        token,
         authenticated: true,
         user: {
           username: user[0].username,
